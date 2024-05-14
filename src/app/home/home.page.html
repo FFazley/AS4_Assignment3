@@ -20,8 +20,8 @@
   <div class="product-list">
     <div>
       <ion-label class="product-list-title padding center" color="danger">Product Of The Day</ion-label>
-      <ion-card class="productOfTheDay" (click)="openProductDetails(productOfTheDay[0], 'productOfTheDay')">
-        <img [src]="productOfTheDay[0].image" alt="{{productOfTheDay[0].name}}" class="center-image">
+      <ion-card class="productOfTheDay" (click)="openProductDetails(productOfTheDay[0], 'productOfTheDay')"><br>
+        <img [src]="productOfTheDay[0].image" alt="{{productOfTheDay[0].name}}" class="center-image"><br>
       </ion-card>
       <ion-label class="product-list-title padding center" color="danger">
         <h2 class="product-name">{{productOfTheDay[0].name}}</h2>
@@ -38,7 +38,9 @@
     <ion-list>
       <div class="scroll-container start-scroll">
         <ion-card *ngFor="let product of product_Popular" class="product-card" (click)="openProductDetails(product, 'popular')">
+          <br>
           <img [src]="product.image" alt="{{product.name}}" class="product-image"/>
+          <br>
           <ion-label>
             <h2 class="product-name">{{product.name}}</h2>
             <p class="product-price">${{product.price}}</p>
@@ -51,7 +53,9 @@
     <ion-label class="product-list-title padding">Trending</ion-label>
       <div class="scroll-container start-scroll">
         <ion-card *ngFor="let product of Product_Trending" class="product-card" (click)="openProductDetails(product, 'trending')">
+          <br>
           <img [src]="product.image" alt="{{product.name}}" class="product-image"/>
+          <br>
           <ion-label>
             <h2 class="product-name">{{product.name}}</h2>
             <p class="product-price">${{product.price}}</p>
