@@ -13,5 +13,13 @@ export const routes: Routes = [
     path: 'signup',
     loadComponent: () => import('./signup/signup.page').then( m => m.SignupPage)
   },
+  {
+    path: 'profilepage',
+    loadComponent: () => import('./profilepage/profilepage.page').then( m => m.ProfilepagePage)
+  },
+  {
+    path: 'settings',
+    loadComponent: () => import('./settings/settings.page').then( m => m.SettingsPage)
+  },
 
 ];
