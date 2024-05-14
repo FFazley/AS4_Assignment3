@@ -1,13 +1,14 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { HomePage } from './home/home.page'; // Adjust the path to the actual location of home.page.ts
 
-export const routes: Routes = [
+const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomePage },
   {
     path: 'home',
-    loadComponent: () => import('./home/home.page').then((m) => m.CorrectComponent), // Replace CorrectComponent with the correct exported component
+    loadComponent: () => import('./home/home.page').then( m => m.HomePage)
   },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
-  },
+  // Add other routes here
 ];
+
+export const appRoutes = RouterModule.forRoot(routes);

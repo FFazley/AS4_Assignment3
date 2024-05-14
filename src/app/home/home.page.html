@@ -1,86 +1,13 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title size="large" class="ion-text-center large-font">PB Hub</ion-title>
-    <ion-buttons slot="end">
-      <a routerLink="/cart"><ion-icon slot="icon-only" name="cart"></ion-icon></a>
-      <ion-icon slot="icon-only" name="cart"></ion-icon>
-      <ion-button routerLink="/cart">
-        <ion-badge>{{cartService.getItems().length}}</ion-badge>
-      </ion-button>
-    </ion-buttons>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>home</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div class="product-list">
-    <div>
-      <ion-label class="product-list-title padding center" color="danger">Product Of The Day</ion-label>
-      <ion-card class="productOfTheDay" (click)="openProductDetails(productOfTheDay[0], 'productOfTheDay')">
-        <img [src]="productOfTheDay[0].image" alt="{{productOfTheDay[0].name}}">
-      </ion-card>
-      <ion-label class="product-list-title padding center" color="danger">
-        <h2 class="product-name">{{productOfTheDay[0].name}}</h2>
-      </ion-label>
-      <ion-label class="product-list-title padding center" color="danger">
-        <p class="product-name">${{productOfTheDay[0].price}}</p>
-      </ion-label>
-      <ion-label>
-        <p class="product-name padding center"><ion-icon name="star" *ngFor="let i of [].constructor(productOfTheDay[0].rating)"></ion-icon></p>
-      </ion-label>
-    </div>
-    <br>
-    <ion-label class="product-list-title padding">Popular</ion-label>
-    <ion-list>
-      <div class="scroll-container start-scroll">
-        <ion-card *ngFor="let product of product_Popular" class="product-card" (click)="openProductDetails(product, 'popular')">
-          <img [src]="product.image" alt="{{product.name}}" class="product-image"/>
-          <ion-label>
-            <h2 class="product-name">{{product.name}}</h2>
-            <p class="product-price">${{product.price}}</p>
-            <p><ion-icon name="star" *ngFor="let i of [].constructor(product.rating)"></ion-icon></p>
-          </ion-label>
-        </ion-card>
-      </div>
-    </ion-list>
-    <ion-list>
-      <ion-label class="product-list-title padding">Trending</ion-label>
-      <div class="scroll-container start-scroll">
-        <ion-card *ngFor="let product of Product_Trending" class="product-card" (click)="openProductDetails(product, 'trending')">
-          <img [src]="product.image" alt="{{product.name}}" class="product-image"/>
-          <ion-label>
-            <h2 class="product-name">{{product.name}}</h2>
-            <p class="product-price">${{product.price}}</p>
-            <p><ion-icon name="star" *ngFor="let i of [].constructor(product.rating)"></ion-icon></p>
-          </ion-label>
-        </ion-card>
-      </div>
-    </ion-list>
-  </div>
-  <ion-footer>
+  <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-grid>
-        <ion-row class="ion-align-items-center ion-justify-content-center">
-          <ion-col size="12" class="ion-text-center">
-            <p>Are you interested in renting a cube?</p>
-            <a routerLink="/signup">Register as Seller</a>
-          </ion-col>
-        </ion-row>
-        <ion-row class="ion-align-items-center ion-justify-content-center">
-          <ion-col size="12" class="ion-text-center">
-            <img src="../../assets/img/PB_Primary Logo_white jawi.png" alt="Description of image">
-          </ion-col>
-        </ion-row>
-        <ion-row class="ion-align-items-center ion-justify-content-center">
-          <ion-col size="12" class="ion-text-center">
-            <h2>Contact Details</h2>
-            <p>Email: arif&#64;gmail.com</p>
-            <p>Phone: 123-456-7890</p>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+      <ion-title size="large">home</ion-title>
     </ion-toolbar>
-  </ion-footer>
+  </ion-header>
 </ion-content>

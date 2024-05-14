@@ -1,24 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
-import { RouterModule } from '@angular/router';
-import { CartService } from './services/cart.service'; // Adjust the path as needed
+import { FormsModule } from '@angular/forms';
+import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-home',
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss'],
   standalone: true,
-  imports: [CommonModule, IonicModule, RouterModule],
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'] // Adjust the path as needed
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
-export class HomeComponent {
-  productOfTheDay = [/* your product of the day data */];
-  product_Popular = [/* your popular products data */];
-  Product_Trending = [/* your trending products data */];
+export class HomePage implements OnInit {
 
-  constructor(public cartService: CartService) {}
+  constructor() { }
 
-  openProductDetails(product: any, category: string) {
-    // your logic to open product details
+  ngOnInit() {
   }
+
 }
