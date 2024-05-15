@@ -20,11 +20,7 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./profilepage/profilepage.page').then((m) => m.ProfilepagePage),
   },
-  {
-    path: 'settings',
-    loadComponent: () =>
-      import('./settings/settings.page').then((m) => m.SettingsPage),
-  },
+ 
   {
     path: 'loginpage',
     loadComponent: () =>
