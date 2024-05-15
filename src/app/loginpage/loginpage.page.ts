@@ -12,6 +12,8 @@ import {
   IonText,
   IonLabel,
   IonButton,
+  IonCardContent,
+  IonCard,
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -20,6 +22,8 @@ import {
   styleUrls: ['./loginpage.page.scss'],
   standalone: true,
   imports: [
+    IonCard,
+    IonCardContent,
     IonContent,
     IonHeader,
     IonTitle,

@@ -13,6 +13,8 @@ import {
   IonLabel,
   IonButton,
   IonInputPasswordToggle,
+  IonCardContent,
+  IonCard,
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -21,6 +23,8 @@ import {
   styleUrls: ['./signup.page.scss'],
   standalone: true,
   imports: [
+    IonCard,
+    IonCardContent,
     IonButton,
     IonLabel,
     IonText,
@@ -39,5 +43,6 @@ import {
 export class SignupPage implements OnInit {
   constructor() {}
 
+  // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
   ngOnInit() {}
 }
