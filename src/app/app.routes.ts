@@ -21,26 +21,23 @@ export const routes: Routes = [
       import('./profilepage/profilepage.page').then((m) => m.ProfilepagePage),
   },
   {
-    path: 'settings',
-    loadComponent: () =>
-      import('./settings/settings.page').then((m) => m.SettingsPage),
-  },
-  {
     path: 'loginpage',
     loadComponent: () =>
       import('./loginpage/loginpage.page').then((m) => m.LoginpagePage),
   },
   {
     path: 'cartpage',
-    loadComponent: () => import('./cartpage/cartpage.page').then( m => m.CartpagePage),
+    loadComponent: () =>
+      import('./cartpage/cartpage.page').then((m) => m.CartpagePage),
   },
   {
     path: 'homeadmin',
-    loadComponent: () => import('./homeadmin/homeadmin.page').then( m => m.HomeadminPage)
+    loadComponent: () =>
+      import('./homeadmin/homeadmin.page').then((m) => m.HomeadminPage),
   },
   {
     path: 'details',
-    loadComponent: () => import('./details/details.page').then( m => m.DetailsPage)
+    loadComponent: () =>
+      import('./details/details.page').then((m) => m.DetailsPage),
   },
-
 ];
