@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {
   IonContent, IonHeader, IonTitle, IonToolbar, IonButtons, IonBadge, IonMenuButton, IonIcon,
-  IonButton, IonItem, IonFooter, IonLabel, IonCard, IonList, IonRow, IonCol, IonGrid,IonMenu
+  IonButton, IonItem, IonFooter, IonLabel, IonCard, IonList, IonRow, IonCol, IonGrid, IonMenu
 } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
 
@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [
     IonItem, IonButton, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
-    IonButtons, IonBadge, IonMenuButton, IonIcon, IonFooter, IonLabel, IonCard, IonList, IonRow, IonCol, IonGrid,IonMenu
+    IonButtons, IonBadge, IonMenuButton, IonIcon, IonFooter, IonLabel, IonCard, IonList, IonRow, IonCol, IonGrid, IonMenu
   ]
 })
 export class HomePage implements OnInit {
@@ -22,7 +22,7 @@ export class HomePage implements OnInit {
   product_Popular: any;
   Product_Trending: any;
 
-  constructor(private router: Router) { 
+  constructor(private router: Router) {
     this.productOfTheDay = [{
       image: 'assets/img/food1.jpg',
       name: 'Product Name',
@@ -32,7 +32,7 @@ export class HomePage implements OnInit {
 
     this.product_Popular = [
       {
-      image: 'assets/img/food1.jpg',
+        image: 'assets/img/food1.jpg',
         name: 'Popular Product 1',
         price: 19.99,
         rating: 4
@@ -48,14 +48,12 @@ export class HomePage implements OnInit {
     this.Product_Trending = [
       {
         image: 'assets/img/food3.jpg',
-
         name: 'Trending Product 1',
         price: 34.99,
         rating: 5
       },
       {
         image: 'assets/img/food4.jpg',
-
         name: 'Trending Product 2',
         price: 44.99,
         rating: 4
