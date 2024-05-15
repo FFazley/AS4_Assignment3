@@ -24,44 +24,7 @@ export class HomePage implements OnInit {
   Product_Trending: any;
 
   constructor(private router: Router) {
-    this.productOfTheDay = [{
-      image: 'assets/img/food1.jpg',
-      name: 'Product Name',
-      price: 29.99,
-      rating: 5
-    }];
-
-    this.product_Popular = [
-      {
-        image: 'assets/img/food1.jpg',
-        name: 'Popular Product 1',
-        price: 19.99,
-        rating: 4
-      },
-      {
-        image: 'assets/img/food2.jpg',
-        name: 'Popular Product 2',
-        price: 24.99,
-        rating: 3
-      }
-    ];
-
-    this.Product_Trending = [
-      {
-        image: 'assets/img/food3.jpg',
-        name: 'Trending Product 1',
-        price: 34.99,
-        rating: 5
-      },
-      {
-        image: 'assets/img/food4.jpg',
-        name: 'Trending Product 2',
-        price: 44.99,
-        rating: 4
-      }
-    ];
-  
-  
+   
     addIcons({
       'home-outline': homeOutline,
       'heart-outline': heartOutline,
