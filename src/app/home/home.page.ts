@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {
   IonContent, IonHeader, IonTitle, IonToolbar, IonButtons, IonBadge, IonMenuButton, IonIcon,
-  IonButton, IonItem, IonFooter, IonLabel, IonCard, IonList, IonRow, IonCol, IonGrid
+  IonButton, IonItem, IonFooter, IonLabel, IonCard, IonList, IonRow, IonCol, IonGrid,IonMenu
 } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
 
@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [
     IonItem, IonButton, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
-    IonButtons, IonBadge, IonMenuButton, IonIcon, IonFooter, IonLabel, IonCard, IonList, IonRow, IonCol, IonGrid
+    IonButtons, IonBadge, IonMenuButton, IonIcon, IonFooter, IonLabel, IonCard, IonList, IonRow, IonCol, IonGrid,IonMenu
   ]
 })
 export class HomePage implements OnInit {
