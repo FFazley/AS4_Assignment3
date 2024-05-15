@@ -77,6 +77,6 @@ export class PhotoService {
 
   private async loadSaved() {
     const photos = await Storage.get({ key: 'photos' });
-    this.photos = JSON.parse(photos.value) || [];
+    this.photos = photos.value ? JSON.parse(photos.value) : [];
   }
 }
