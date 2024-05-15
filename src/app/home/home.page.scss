@@ -49,8 +49,43 @@ ion-icon {
 }
 
 ion-toolbar {
-  --background: navy;
-  --ion-toolbar-background: navy;
+  --background: #0b3948;
+
 }
+
+ion-content {
+  --background: #cbcccd;
+
+}
+
+/* styles.scss */
+
+.bg-light-blue-500 {
+  background-color: #3b82f6; /* Tailwind's light blue 500 color */
+}
+
+.large-font {
+  font-size: 1.25rem; /* Tailwind's large font size */
+}
+
+.ion-text-center {
+  text-align: center;
+}
+
+.ion-padding {
+  padding: 1rem; /* Tailwind's padding */
+}
+
+.ion-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.icon-adjust {
+  margin-right: 1rem; /* Adjust the margin as needed */
+  /* Alternatively, you can use transform for more precise control */
+  /* transform: translateX(-5px); */
+}
+
 
 
