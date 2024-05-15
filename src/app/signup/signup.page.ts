@@ -13,6 +13,8 @@ import {
   IonLabel,
   IonButton,
   IonInputPasswordToggle,
+  IonCardContent,
+  IonCard,
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -21,6 +23,8 @@ import {
   styleUrls: ['./signup.page.scss'],
   standalone: true,
   imports: [
+    IonCard,
+    IonCardContent,
     IonButton,
     IonLabel,
     IonText,
