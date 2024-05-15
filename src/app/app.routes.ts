@@ -20,7 +20,10 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./profilepage/profilepage.page').then((m) => m.ProfilepagePage),
   },
+<<<<<<< HEAD
  
+=======
+>>>>>>> 6fd93608e3ff3b9a371ad92efcb58feea47e21f4
   {
     path: 'loginpage',
     loadComponent: () =>
@@ -28,15 +31,17 @@ export const routes: Routes = [
   },
   {
     path: 'cartpage',
-    loadComponent: () => import('./cartpage/cartpage.page').then( m => m.CartpagePage),
+    loadComponent: () =>
+      import('./cartpage/cartpage.page').then((m) => m.CartpagePage),
   },
   {
     path: 'homeadmin',
-    loadComponent: () => import('./homeadmin/homeadmin.page').then( m => m.HomeadminPage)
+    loadComponent: () =>
+      import('./homeadmin/homeadmin.page').then((m) => m.HomeadminPage),
   },
   {
     path: 'details',
-    loadComponent: () => import('./details/details.page').then( m => m.DetailsPage)
+    loadComponent: () =>
+      import('./details/details.page').then((m) => m.DetailsPage),
   },
-
 ];
