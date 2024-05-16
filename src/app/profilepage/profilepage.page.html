@@ -1,39 +1,38 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>Profile</ion-title>
+    <ion-title size="large" class="ion-text-center large-font">Profile</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-    </ion-toolbar>
-  </ion-header>
-
-  <div class="card">
-    <div class="header">
-      <div class="avatar">
-        <img src="assets/monkey.jpg" alt="">
+<ion-content [fullscreen]="true" class="bg-zinc-100 dark:bg-zinc-800 ion-padding">
+  <ion-card class="bg-white dark:bg-zinc-900 rounded-lg shadow-lg max-w-sm w-full mx-auto card">
+    <ion-card-content>
+      <div class="header ion-text-center">
+        <div class="avatar relative">
+          <ion-img src="assets/monkey.jpg" alt="Profile Picture" class="profile-img"></ion-img>
+          <ion-icon name="pencil" class="edit-icon"></ion-icon>
+        </div>
+        <h2 class="mt-4 text-lg font-semibold text-zinc-800 dark:text-white">Profile</h2>
       </div>
-    </div>
-  </div> 
- <div>
-  <ion-list>
-    <ion-list>
-      <ion-item>
-        <ion-input label="Full Name" placeholder="Full Name"></ion-input>
-      </ion-item>
-  
-      <ion-item>
-        <ion-input label="Email" type="email" placeholder="email@domain.com"></ion-input>
-      </ion-item>
-  
-      <ion-item>
-        <ion-input label="Telephone no." type="tel" placeholder="888-888-8888"></ion-input>
-      </ion-item>
-    </ion-list>
-  </ion-list>
-  <ion-button expand="block">Save</ion-button>
-</div>
 
+      <ion-list class="ion-margin-top">
+        <ion-item>
+          <ion-label position="stacked" class="text-sm text-zinc-600 dark:text-zinc-400">Full Name</ion-label>
+          <ion-input type="text" value="Full Name" class="mt-1 block w-full px-3 py-2 bg-zinc-200 dark:bg-zinc-700 text-zinc-900 dark:text-white rounded-md focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked" class="text-sm text-zinc-600 dark:text-zinc-400">Email</ion-label>
+          <ion-input type="email" value="email@domain.com" class="mt-1 block w-full px-3 py-2 bg-zinc-200 dark:bg-zinc-700 text-zinc-900 dark:text-white rounded-md focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked" class="text-sm text-zinc-600 dark:text-zinc-400">Telephone no.</ion-label>
+          <ion-input type="tel" value="888-888-8888" class="mt-1 block w-full px-3 py-2 bg-zinc-200 dark:bg-zinc-700 text-zinc-900 dark:text-white rounded-md focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"></ion-input>
+        </ion-item>
+      </ion-list>
+
+      <ion-button expand="block" color="primary" class="ion-margin-top">Save</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

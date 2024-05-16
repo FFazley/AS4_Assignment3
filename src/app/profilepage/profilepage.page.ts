@@ -8,7 +8,12 @@ import { IonContent,
          IonList, 
          IonItem, 
          IonInput, 
-         IonButton 
+         IonButton, 
+         IonCard,
+         IonCardContent,
+         IonImg,
+         IonLabel,  
+         IonIcon
         } from '@ionic/angular/standalone';
 
 @Component({
@@ -25,7 +30,13 @@ import { IonContent,
             IonList, 
             IonItem, 
             IonInput, 
-            IonButton,],
+            IonButton,
+            IonCard,
+            IonCardContent,
+            IonImg,
+            IonLabel,
+            IonIcon
+            ],
 })
 export class ProfilepagePage implements OnInit {
 

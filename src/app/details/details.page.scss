@@ -2,3 +2,18 @@ ion-toolbar {
     --background: #0b3948;
 
   }
+
+.small-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* Optional: to ensure the image fits well within the specified dimensions */
+  }
+  
+  .large-font {
+    font-size: 1.25rem; /* Tailwind's large font size */
+  }
+  
+  .ion-text-center {
+    text-align: center;
+  }
+  

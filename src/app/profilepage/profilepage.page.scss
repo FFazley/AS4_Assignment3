@@ -1,26 +1,202 @@
-.card {
+ion-toolbar {
+    --background: #0b3948;
+  }
+  
+  .card {
     margin: 0 auto;
     margin-bottom: 70px;
-}
-
-.header {
+  }
+  
+  .header {
     height: 200px;
-
-    
-}
-img {
-    display: block;
-    border-radius: 50%;
-    position: absolute;
-    bottom: calc(-1*(80px + 4px));
-    border: 8px solid #080808;
-    background-color: #fff;
-}
-.avatar {
+  }
+  
+  .avatar {
     width: 160px;
     height: 160px;
     position: relative;
     margin: 0 auto;
-
-    
-}
+    display: inline-block;
+  }
+  
+  .profile-img {
+    display: block;
+    width: 160px; /* Ensure the profile image is 160x160 to fit the container */
+    height: 160px;
+    border-radius: 50%;
+    border: 8px solid #080808;
+    background-color: #fff;
+  }
+  
+  .edit-icon {
+    position: absolute;
+    top: 0; /* Position at the top */
+    right: 0; /* Position at the right */
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    cursor: pointer;
+    background-color: #fff; /* Optional: Add background color for better visibility */
+    border-radius: 50%; /* Optional: Make the icon circular */
+  }
+  
+  /* Tailwind CSS classes */
+  .bg-zinc-100 {
+    background-color: #f3f4f6;
+  }
+  
+  .dark .bg-zinc-800 {
+    background-color: #1f2937;
+  }
+  
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .dark .bg-zinc-900 {
+    background-color: #111827;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .rounded-full {
+    border-radius: 9999px;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .h-4 {
+    height: 1rem;
+  }
+  
+  .w-4 {
+    width: 1rem;
+  }
+  
+  .border-2 {
+    border-width: 2px;
+  }
+  
+  .border-white {
+    border-color: #ffffff;
+  }
+  
+  .dark .border-zinc-900 {
+    border-color: #111827;
+  }
+  
+  .ion-margin-top {
+    margin-top: 1rem;
+  }
+  
+  .ion-text-center {
+    text-align: center;
+  }
+  
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
+  .text-zinc-800 {
+    color: #1f2937;
+  }
+  
+  .dark .text-white {
+    color: #ffffff;
+  }
+  
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  
+  .text-zinc-600 {
+    color: #4b5563;
+  }
+  
+  .dark .text-zinc-400 {
+    color: #9ca3af;
+  }
+  
+  .mt-1 {
+    margin-top: 0.25rem;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  .py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .bg-zinc-200 {
+    background-color: #e5e7eb;
+  }
+  
+  .dark .bg-zinc-700 {
+    background-color: #374151;
+  }
+  
+  .text-zinc-900 {
+    color: #111827;
+  }
+  
+  .dark .text-white {
+    color: #ffffff;
+  }
+  
+  .rounded-md {
+    border-radius: 0.375rem;
+  }
+  
+  .focus\:outline-none {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  
+  .focus\:ring {
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
+  }
+  
+  .focus\:ring-blue-500 {
+    --ion-color-primary-rgb: 66, 153, 225;
+  }
+  
+  .focus\:border-blue-500 {
+    border-color: #3b82f6;
+  }
+  
+  .ion-padding {
+    padding: 1rem;
+  }
+  
+  .max-w-sm {
+    max-width: 24rem;
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
