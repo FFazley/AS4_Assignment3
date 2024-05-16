@@ -4,6 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
+<<<<<<< HEAD
 <ion-content [fullscreen]="true" class="bg-zinc-100 dark:bg-zinc-800 ion-padding">
   <ion-card class="bg-white dark:bg-zinc-900 rounded-lg shadow-lg max-w-sm w-full mx-auto card">
     <ion-card-content>
@@ -13,6 +14,27 @@
           <ion-icon name="pencil" class="edit-icon"></ion-icon>
         </div>
         <h2 class="mt-4 text-lg font-semibold text-zinc-800 dark:text-white">Profile</h2>
+=======
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="card">
+    <div class="header"> 
+      <div class="avatar">
+    
+  <ng-container *ngFor="let photo of photoService.photos; index as position">
+    <ion-img [src]="photo.webviewPath"></ion-img>
+  </ng-container>
+  <ion-fab vertical="top" horizontal="end" slot="fixed" size="small" style="margin-top: 12em; margin-left: 7em;">      
+    <ion-fab-button (click)="addPhotoToGallery()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+>>>>>>> c359a595c0f993bf9e8e8bfc6b32c1995b1fb6b7
       </div>
 
       <ion-list class="ion-margin-top">

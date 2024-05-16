@@ -20,7 +20,7 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./profilepage/profilepage.page').then((m) => m.ProfilepagePage),
   },
-
+ 
   {
     path: 'loginpage',
     loadComponent: () =>
